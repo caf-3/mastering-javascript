@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>inline Javascript</h1>
+    <script defer>
+        function sayHi(){
+            window.alert('Hi visitor.');
+        }
+        sayHi();
+        //this lead to an error
+        function crash(){
+            //console.log("</ script>");
+        }
+        //error fixed
+        function noCrash(){
+            window.alert("<\/script>");
+        }
+        noCrash();
+    </script>
+</body>
+</html>
