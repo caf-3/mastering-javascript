@@ -30,6 +30,15 @@
             'use strict';
         }
     </script>
-    
+    <!-- KEYWORDS, RESERVED WORDS
+        VAR KEYWORD     -->
+    <script>
+        var let = 12; //valid outside the strict mode
+        function callMe(){
+            'use strict';
+            var let = 12; //invalid in strict mode
+        }
+        var message; // undefined value is asigned automatically
+    </script>
 </body>
 </html>
