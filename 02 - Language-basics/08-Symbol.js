@@ -36,6 +36,13 @@ const customUser = {
 } 
 
 for (let key in customUser) console.log(key,":",customUser[key]);
-console.log(0123)
 // Direct access
 console.log(customUser[userId])
+process.stdout.write('\033c')
+
+//clone
+
+let clone = Object.assign({}, customUser);
+console.log(clone)
+let cloneKeys = Reflect.ownKeys(clone);
+console.log(cloneKeys)
